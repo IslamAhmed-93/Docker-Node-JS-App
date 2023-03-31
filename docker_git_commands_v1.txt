@@ -1,0 +1,287 @@
+    1  sudo su -
+    2  cd Desktop/
+    3  ls -ltrh 
+    4  pwd
+    5  cd /home/islam/Downloads/
+    6  ls -ltrh
+    7  sudo dpkg -i code_1.75.1-1675893397_amd64.deb 
+    8  code
+    9  sudo su -
+   10  npm init
+   11  npm i express
+   12  node --version
+   13  node
+   14  apt-get update -y
+   15  sudo su -
+   16  mkdir node-app/
+   17  cd node-app/
+   18  ls -ltrh
+   19  code .
+   20  sudo poweroff 
+   21  cd node-app/
+   22  ls -ltrh 
+   23  sudo su -
+   24  ls -ltrh
+   25  vim autorun.sh 
+   26  apt-get install -y vim
+   27  sudo apt-get install -y vim
+   28  ls -ltrh
+   29  vim autorun.sh 
+   30  ./autorun.sh 
+   31  cd node-app/
+   32  ls -ltrh 
+   33  sudo poweroff 
+   34  vim index.js 
+   35  sudo apt-get upgrade -y
+   36  cd node-app/
+   37  ls -lrh
+   38  ls -lrth
+   39  vim index.js 
+   40  vim package.json 
+   41  vim package-lock.json 
+   42  modprobe kvm
+   43  sudo su -
+   44  sudo systemctl --user start docker-desktop
+   45  export XDG_RUNTIME_DIR="/run/user/$UID"
+   46  export DBUS_SESSION_BUS_ADDRESS="unix:path=${XDG_RUNTIME_DIR}/bus"
+   47  sudo systemctl --user start docker-desktop
+   48  systemctl status docker
+   49  docker --version 
+   50  docker images
+   51  sudo su -
+   52  cd node-app/
+   53  ls -ltrh 
+   54  vi index.js 
+   55  node
+   56  docker pull nginx
+   57  docker login
+   58  sudo docker login
+   59  docker pull nginx
+   60  sudo docker pull nginx
+   61  docker images
+   62  sudo docker images
+   63  sudo poweroff 
+   64  node index.js 
+   65  npm i nodemon --save-dev
+   66  npm run start-dev
+   67  docker build -t express-node-app .
+   68  sudo docker build -t express-node-app .
+   69  sudo docker images ls
+   70  sudo docker images
+   71  sudo su -
+   72  cd node-app/
+   73  ls -ltrh 
+   74  vim index.js 
+   75  ls -ltrh node_modules/
+   76  ip addr
+   77  ls -ltrh 
+   78  vim package.json 
+   79  apt-get update -y 
+   80  sudo apt-get update -y 
+   81  sudo apt-get install git -y
+   82  git --version
+   83  echo "# Node-JS-App" >> README.md
+   84  git init
+   85  ls -ltrha 
+   86  git branch -M main
+   87  git init
+   88  git login 
+   89  git --help
+   90  git add README.md
+   91  git commit -m "Pushing Node-Js App data from docker course to my github repo"
+   92  git config
+   93  git config --global user.email "eslam.ahmed.hussien94@gmail.com"
+   94  git config --global user.name "IslamAhmed-93"
+   95  git commit -m "Pushing Node-Js App data from docker course to my github repo"
+   96  git branch -M main
+   97  git remote add origin https://github.com/IslamAhmed-93/Node-JS-App.git
+   98  git add .
+   99  git commit -m "Pushing Node-Js App data from docker course to my github repo"
+  100  git push -u origin main
+  101  git remote add origin https://github.com/IslamAhmed-93/Node-JS-App.git
+  102  git add .
+  103  git commit -m "Pushing Node-Js App data from docker course to my github repo"
+  104  git push -u origin main
+  105  git status 
+  106  git commit -m "Pushing My 1st Node-Js App data from docker course to my github repo"
+  107  git add .
+  108  git commit -m "Pushing My 1st Node-Js App data from docker course to my github repo"
+  109  git push -u origin main
+  110  docker images 
+  111  sudo docker images 
+  112  sudo docker run --name express-node-app-container express-node-app 
+  113  sudo docker run --name express-node-app-container -d express-node-app 
+  114  docker ps
+  115  sudo docker ps
+  116  sudo docker ps -a 
+  117  sudo docker remove 22d8cb6ceba8
+  118  sudo docker ps -a 
+  119  sudo docker run --name express-node-app-container -d express-node-app 
+  120  sudo docker ps 
+  121  sudo docker rm express-node-app -f
+  122  sudo docker rm express-node-app-container -f
+  123  sudo docker run --name express-node-app-container -d -p 4000:4000 express-node-app 
+  124  sudo docker ps 
+  125  git add .
+  126  git commit -m "Adding Dockerfile to the repo"
+  127  git status 
+  128  git push 
+  129  git status 
+  130  sudo docker images ls
+  131  sudo docker images
+  132  docker ps 
+  133  sudo docker ps 
+  134  docker exec -it express-node-app-container bash 
+  135  sudo docker exec -it express-node-app-container bash 
+  136  sudo su - 
+  137  cd node-app/
+  138  ls -ltrha 
+  139  docker ps -a 
+  140  sudo docker ps -a 
+  141  sudo docker ps
+  142  sudo docker images ls 
+  143  sudo docker images
+  144  sudo docker ps
+  145  sudo docker ps -a 
+  146  sudo docker run --name express-node-app-container -d -p 4000:4000 express-node-app 
+  147  sudo docker rm express-node-app-container -f
+  148  sudo docker ps -a 
+  149  sudo docker rm edfd1884731c -f
+  150  sudo docker run --name express-node-app-container -d -p 4000:4000 express-node-app 
+  151  sudo docker ps -a 
+  152  sudo docker ps 
+  153  sudo docker exec -it express-node-app-container bash
+  154  sudo docker build -t express-node-app .
+  155  sudo docker images
+  156  sudo docker build -t express-node-app .
+  157  sudo docker images
+  158  sudo docker rm ef120fe2b477 -f
+  159  sudo docker images
+  160  sudo docker ps
+  161  sudo docker stop express-node-app-container 
+  162  sudo docker ps
+  163  udo docker stop express-node-app-container -f 
+  164  sudo docker rm express-node-app-container -f 
+  165  sudo docker ps -a
+  166  sudo docker images
+  167  sudo docker images rm ef120fe2b477 -f
+  168  sudo docker images rm ef120fe2b477 
+  169  sudo docker rm images ef120fe2b477 
+  170  sudo docker rm image ef120fe2b477 
+  171  sudo docker rmi -f ef120fe2b477 
+  172  sudo docker images
+  173  sudo docker run --name express-node-app-container -d -p 4000:4000 express-node-app 
+  174  sudo docker ps
+  175  sudo docker exec -it express-node-app-container bash
+  176  history | grep git
+  177  git pull
+  178  sudo git pull
+  179  sudo git commit -m "adding .dockerigonre file"
+  180  git config --global user.email "eslam.ahmed.hussien94@gmail.com"
+  181  git config --global user.name "IslamAhmed-93"
+  182  sudo git commit -m "adding .dockerigonre file"
+  183  git config user.email "eslam.ahmed.hussien94@gmail.com"
+  184  git config user.name "IslamAhmed-93"
+  185  sudo git commit -m "adding .dockerigonre file" 
+  186  git add .
+  187  git commit -m "adding .dockerigonre file" 
+  188  sudo git pull
+  189  git push
+  190  git add .
+  191  git commit -m "adding .dockerigonre file" 
+  192  git push
+  193  git status 
+  194  sudo docker exec -it express-node-app-container bash
+  195  sudo docker rm expres-node-app-container -f
+  196  sudo docker rm exrpress-node-app-container -f
+  197  sudo docker rm express-node-app-container -f
+  198  sudo docker ps
+  199  sudo docker ps -a 
+  200  docker images
+  201  sudo docker images 
+  202  sudo docker rmi express-node-app
+  203  sudo docker images 
+  204  sudo docker build -t express-node-app .
+  205  sudo docker images 
+  206  sudo docker ps
+  207  sudo docker ps -a 
+  208  sudo docker rmi express-node-app
+  209  sudo docker images 
+  210  sudo docker build -t express-node-app .
+  211  sudo docker run --name express-node-app-container -d -p 4000:4000 express-node-app 
+  212  sudo docker ps
+  213  sudo docker exec -it express-node-app-container bash
+  214  sudo docker images 
+  215  git add .
+  216  git commit -m "modified .dockerigonre file" 
+  217  git push
+  218  git status 
+  219  sudo docker ps
+  220  sudo docker stop express-node-app-container
+  221  sudo docker ps
+  222  sudo docker images 
+  223  sudo docker rmi express-node-app 
+  224  sudo docker rmi -f express-node-app 
+  225  sudo docker images 
+  226  sudo docker ps
+  227  sudo docker build -t express-node-app .
+  228  sudo docker images 
+  229  sudo docker run --name express-node-app-container -d -p 4000:4000 express-node-app 
+  230  sudo docker rm express-node-app-container -f
+  231  sudo docker run --name express-node-app-container -d -p 4000:4000 express-node-app 
+  232  sudo docker ps -a 
+  233  sudo docker rm express-node-app-container -f
+  234  sudo docker ps -a 
+  235  sudo docker images 
+  236  sudo docker run --name express-node-app-container -d -p 4000:4000 express-node-app
+  237  sudo docker rm express-node-app-container -f
+  238  sudo docker run --name express-node-app-container -d -p 4000:4000 express-node-app
+  239  sudo docker ps
+  240  sudo docker rm express-node-app-container -f
+  241  sudo docker ps
+  242  sudo docker ps -a 
+  243  sudo docker rmi -f express-node-app 
+  244  sudo docker images 
+  245  sudo docker build -t express-node-app .
+  246  sudo docker images 
+  247  sudo docker run --name express-node-app-container -d -p 4000:4000 express-node-app
+  248  sudo docker ps
+  249  sudo docker logs express-node-app-container
+  250  sudo docker exec -it express-node-app-container bash
+  251  sudo docker rm express-node-app-container -f
+  252  sudo docker images 
+  253  sudo docker ps 
+  254  sudo docker ps -a
+  255  pwd
+  256  sudo docker run --name express-node-app-container -v /home/islam/node-app:/node-app -d -p 4000:4000 express-node-app
+  257  sudo docker exec -it express-node-app-container bash
+  258  sudo docker logs express-node-app-container
+  259  sudo docker exec -it express-node-app-container bash
+  260  sudo docker rm express-node-app-container -f
+  261  sudo docker ps -a
+  262  sudo docker run --name express-node-app-container -v /home/islam/node-app:/node-app:ro -d -p 4000:4000 express-node-app
+  263  sudo docker exec -it express-node-app-container bash
+  264  sudo docker ps 
+  265  sudo docker ps -a 
+  266  sudo docker images 
+  267  history 
+  268  history | grep "pwd"
+  269  sudo su -
+  270  cd node-app/
+  271  history 
+  272  sudo docker run --name express-node-app-container -v $(pwd)/src:/node-app/src:ro -d -p 4000:4000 express-node-app
+  273  sudo docker rm express-node-app-container -f
+  274  sudo docker ps -a 
+  275  sudo docker run --name express-node-app-container -v $(pwd)/src:/node-app/src:ro -d -p 4000:4000 express-node-app
+  276  history 
+  277  sudo docker ps 
+  278  sudo docker rm express-node-app-container -f
+  279  sudo docker build -t express-node-app .
+  280  sudo docker rmi express-node-app
+  281  sudo docker images 
+  282  sudo docker build -t express-node-app .
+  283  sudo docker images 
+  284  sudo docker run --name express-node-app-container -v $(pwd)/src:/node-app/src:ro -d -p 4000:4000 express-node-app
+  285  sudo docker ps 
+  286  sudo docker logs express-node-app-container
+  287  history >> docker_git_commands_v1.txt
