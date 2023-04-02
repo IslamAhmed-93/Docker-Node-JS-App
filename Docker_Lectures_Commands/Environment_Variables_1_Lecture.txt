@@ -1,0 +1,51 @@
+#How to pass environment variables directly to running a docker container command :
+======================================================================================
+
+
+395	 sudo docker run --name express-node-app-container --env PORT=4000 --env NODE_ENV=development -v $(pwd)/src:/node-app/src:ro -d -p 4000:4000 express-node-app
+396	 sudo docker images
+397	 sido docker ps -a
+398	 uido docker ps -a
+399	 sudo docker ps -a
+400	 sudo docker ps
+401	 sudo docker rm express-node-app-conatiner -f
+402	 sudo docker rm express-node-app-container -f
+403	 sudo docker ps
+404	 sudo docker run --name express-node-app-container --env PORT=4000 --env NODE_ENV=development -v $(pwd)/src:/node-app/src:ro -d -p 4000:4000 express-node-app
+405	 sudo docker run --name express-node-app-container --env PORT=4000 --env NODE_ENV=development -v $(pwd)/src:/node-app/src:ro -d -p 4000:4000 node-app_node-app
+406	 sudo docker ps
+407	 sudo docker exec -it express-node-app-container bash
+408	 sudo docker rm express-node-app-container -f
+409	 sudo docker ps
+
+#How to pass environment variables from an env file to running a docker container command :
+=============================================================================================
+
+
+410	 sudo docker run --name express-node-app-container --env-file ./.env -v $(pwd)/src:/node-app/src:ro -d -p 4000:4000 node-app_node-app
+411	 sudo docker exec -it express-node-app-container bash
+412	 sudo docker rm express-node-app-container -f
+413	 sudo docker run --name express-node-app-container --env-file ./.env -v $(pwd)/src:/node-app/src:ro -d -p 4000:4000 node-app_node-app
+414	 sudo docker exec -it express-node-app-container bash
+415	 sudo docker ps 
+416	 history 
+417	 sudo docker rm express-node-app-container -f
+
+
+#Running a docker container using docker compose command after passing environment varaibles to the docker compose file directly & using an env variables file:
+===================================================================================================================================================
+
+
+418	 sudo docker compose up -d 
+419	 cd node-app/
+420	 sudo docker compose up -d
+421	 sudo docker exec -it express-node-app-container bash
+422	 history 
+423	 cd node-app/
+424	 sudo docker rm express-node-app-container -f
+425	 sudo docker compose up -d
+426	 sudo docker exec -it express-node-app-container bash
+427	 sudo docker compose down
+428	 sudo docker compose up -d
+429	 sudo docker exec -it express-node-app-container bash
+430	 sudo docker compose down
