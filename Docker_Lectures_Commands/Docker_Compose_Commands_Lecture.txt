@@ -3,9 +3,18 @@
 325	 sudo docker images 
 326	 cd node-app/
 327	 ls -ltrha 
+
+#Command for docker volume creation of one-way bunding voulme with relative path method :
+============================================================================================
+
 328	 sudo docker run --name express-node-app-container -v $(pwd)/src:/node-app/src:ro -d -p 4000:4000 express-node-app
 329	 sudo docker rm express-node-app-container -f
 330	 sudo docker run --name express-node-app-container -v $(pwd)/src:/node-app/src:ro -d -p 4000:4000 express-node-app
+============================================================================================
+
+#Dokcer compose commands section :
+=====================================
+
 331	 ls -ltrha 
 332	 vim package.json 
 333	 sudo docker ps 
@@ -13,6 +22,9 @@
 335	 docker --version
 336	 docker-compose --version
 337	 sudo apt-get update -y
+
+#Installing docker compose command:
+=====================================
 338	 sudo apt-get install docker-compose -y
 339	 docker-compose --version
 340	 sudo docker-compose --help
@@ -21,12 +33,19 @@
 343	 sudo docker rmi express-node-app
 344	 sudo docker images 
 345	 sudo docker ps -a
+
+#Building docker image and creating a container from it using docker compose command:
+========================================================================================
 346	 sudo docker-compose up
 347	 ls -ltrh 
 348	 vim docker-compose.yml 
 349	 sudo docker build -t express-node-app .
 350	 sudo docker rmi express-node-app
 351	 sudo docker-compose up
+
+
+#Building docker image and creating a container from it using docker compose command but in detached mode container & how to down & remove this container :
+================================================================================================================
 352	 sudo docker-compose up -d
 353	 sudo docker ps
 354	 sudo docker images 
