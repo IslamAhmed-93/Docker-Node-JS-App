@@ -4,3 +4,4 @@ Dockerfile
 .dockerignore
 /Docker_Lectures_Commands
 docker-compose.yml
+.env
