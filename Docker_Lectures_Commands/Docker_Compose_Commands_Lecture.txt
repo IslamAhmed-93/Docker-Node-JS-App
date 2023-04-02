@@ -1,0 +1,52 @@
+323	 sudo docker ps 
+324	 sudo docker ps -a 
+325	 sudo docker images 
+326	 cd node-app/
+327	 ls -ltrha 
+328	 sudo docker run --name express-node-app-container -v $(pwd)/src:/node-app/src:ro -d -p 4000:4000 express-node-app
+329	 sudo docker rm express-node-app-container -f
+330	 sudo docker run --name express-node-app-container -v $(pwd)/src:/node-app/src:ro -d -p 4000:4000 express-node-app
+331	 ls -ltrha 
+332	 vim package.json 
+333	 sudo docker ps 
+334	 sudo docker logs express-node-app-container
+335	 docker --version
+336	 docker-compose --version
+337	 sudo apt-get update -y
+338	 sudo apt-get install docker-compose -y
+339	 docker-compose --version
+340	 sudo docker-compose --help
+341	 sudo docker rmi express-node-app
+342	 sudo docker rm express-node-app-container -f
+343	 sudo docker rmi express-node-app
+344	 sudo docker images 
+345	 sudo docker ps -a
+346	 sudo docker-compose up
+347	 ls -ltrh 
+348	 vim docker-compose.yml 
+349	 sudo docker build -t express-node-app .
+350	 sudo docker rmi express-node-app
+351	 sudo docker-compose up
+352	 sudo docker-compose up -d
+353	 sudo docker ps
+354	 sudo docker images 
+355	 sudo docker-compose down
+356	 sudo docker images 
+357	 history 
+358	 sudo docker-compose up -d
+359	 sudo docker ps
+360	 sudo docker exec -it express-node-app-container bash
+361	 sudo docker-compose down
+362	 sudo docker ps
+363	 sudo docker ps -a
+364	 ls -ltrha
+365	 sudo docker-compose up -d
+366	 sudo docker ps
+367	 sudo docker exec -it express-node-app-container bash
+368	 sudo docker-compose down
+369	 sudo docker images 
+370	 sudo docker rmi node-app_node-app
+371	 sudo docker rm express-node-app-container -f
+372	 sudo docker-compose up -d
+373	 sudo docker ps
+374	 sudo docker exec -it express-node-app-container bash
