@@ -273,6 +273,7 @@
   273  sudo docker rm express-node-app-container -f
   274  sudo docker ps -a 
   275  sudo docker run --name express-node-app-container -v $(pwd)/src:/node-app/src:ro -d -p 4000:4000 express-node-app
+  docker run --name express-node-app-container -v $(pwd):/node-app -v /node-app/node_modules -d -p 4000:4000 my-express-node-app:latest
   276  history 
   277  sudo docker ps 
   278  sudo docker rm express-node-app-container -f
