@@ -1,8 +1,18 @@
 const express = require('express');
+const mongoose = require('mongoose');
 
 //init app
 const PORT = process.env.PORT || 4000;
 const app = express();
+
+// connect db
+const DB_USER = 'root';
+const DB_PASSWORD = 'example';
+const DB_PORT = 27017;
+
+
+const URI = `mongodb://${DB_USER}:${DB_PASSWORD}@host:${DB_PORT}`;
+mongoose.connect(URI).then(() => console.log('connect to db.....')).catch((error) => console.log('failed to connect to db: ',error));
 
 app.get('/', (req, res) => res.send('<h1> Hello Trestmerge From Ubuntu Desktop from inside @#$docker container</h1>'));
 
