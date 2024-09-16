@@ -4,10 +4,10 @@ WORKDIR /node-app
 
 COPY . .
 
-RUN npm install
+ARG NODE_ENV
+RUN if [ "$NODE_ENV" = "production" ]; \
+    then npm install --only=production; \
+    else npm install; \
+    fi
 
 EXPOSE 4000
-
-CMD [ "npm", "run", "start-dev" ]
-
-#CMD [ "npm", "start" ]
