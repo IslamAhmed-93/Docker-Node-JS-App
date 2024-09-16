@@ -1,0 +1,75 @@
+758	 mv node-app/docker-compose.dev.yml .
+759	 mv node-app/docker-compose.prod.yml .
+760	 ls -ltrh 
+761	 cd node-app/
+762	 ls -ltrh 
+763	 cd ..
+764	 mv node-app/docker-compose-ref.yml .
+765	 cd node-app/
+766	 ls -ltrh 
+767	 cd ..
+768	 mv docker-compose-ref.yml docker-compose.prod.yml docker-compose.dev.yml node-app/
+769	 ls -ltrh 
+770	 cd node-app/
+771	 ls -ltrha
+772	 sudo poweroff
+773	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d
+774	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+775	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d
+776	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down 
+777	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d --build 
+778	 docker exec -it express-node-app-container bash 
+779	 docker logs express-node-app-container 
+780	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down 
+781	 cd node-app/
+782	 code 
+783	 cd node-app/
+784	 code 
+785	 git add .
+786	 git commit -m "pushing latest modifications in docker compose files"
+787	 git push 
+788	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build 
+789	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+790	 docker image ls 
+791	 docker rmi node-app_node-app 
+792	 docker image ls 
+793	 docker-compose -f docker-compose-ref.yml -f compose up -d --build 
+794	 docker ps 
+795	 docker exec -it express-node-app-container bash
+796	 docker logs express-node-app-container 
+797	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+798	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d --build 
+799	 docker ps 
+800	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down
+801	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d --build 
+802	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d --build
+803	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down
+804	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d --build
+805	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down
+806	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+807	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+808	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+809	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+810	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d --build
+811	 docker exec -it express-node-app-container bash 
+812	 docker logs express-node-app-container 
+813	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down
+814	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+815	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+816	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d --build
+817	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down
+818	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+819	 docker logs express-node-app-container 
+820	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+821	 history 
+822	 touch Dockerfile_with_ARG.txt
+823	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d --build
+824	 docker logs express-node-app-container 
+825	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down
+826	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+827	 docker logs express-node-app-container 
+828	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+829	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d --build
+830	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down
+831	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+832	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
