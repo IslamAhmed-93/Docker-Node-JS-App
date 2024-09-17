@@ -1,0 +1,89 @@
+851	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+852	 docker ps 
+853	 docker logs node-app_mongo_1 
+854	 docker ps 
+855	 docker exec -it node-app_mongo_1 bash
+856	 docker ps 
+857	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+858	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+859	 docker ps 
+860	 docker logs express-node-app-container 
+861	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+862	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+863	 docker logs express-node-app-container 
+864	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+865	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+866	 docker ps 
+867	 docker logs express-node-app-container 
+868	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+869	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+870	 docker logs express-node-app-container 
+871	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+872	 docker volume ls 
+873	 docker volume rm * -f
+874	 docker volume ls 
+875	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+876	 docker logs express-node-app-container 
+877	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+878	 npm install
+879	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+880	 docker logs express-node-app-container 
+881	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+882	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+883	 docker logs express-node-app-container 
+884	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+885	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+886	 docker logs express-node-app-container 
+887	 docker ps 
+888	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+889	 cd node-app/
+890	 code 
+891	 ls -ltrh 
+892	 git add .
+893	 git commit -m "Pushing latest updates for new MongoBD integration with nodejs"
+894	 code
+895	 git push 
+896	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+897	 docker ps 
+898	 docker logs express-node-app-container 4
+899	 docker logs express-node-app-container 
+900	 docker ps 
+901	 docker logs express-node-app-container 
+902	 docker ps 
+903	 docker inspect node-app_mongo_1
+904	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+905	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+906	 docker ps 
+907	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+908	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+909	 docker ps 
+910	 docker logs node-app_mongo_1
+911	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+912	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+913	 docker ps 
+914	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+915	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+916	 docker ps 
+917	 docker inspect node-app_mongo_1
+918	 docker logs express-node-app-container 
+919	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+920	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+921	 docker ps 
+922	 docker logs express-node-app-container 
+923	 docker logs express-node-app-container -f
+924	 docker inspect node-app_mongo_1
+925	 docker logs express-node-app-container -f
+926	 history 
+927	 history | grep "fc -l"
+928	 docker ps 
+929	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+930	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+931	 docker logs express-node-app-container -f
+932	 docker exec -it node-app_mongo_1 bash
+933	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+934	 docker exec -it node-app_mongo_1 mong -u root -p example
+935	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+936	 docker exec -it node-app_mongo_1 mong -u root -p example
+937	 docker exec -it node-app_mongo_1 mongo -u root -p example
+938	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+939	 history 
