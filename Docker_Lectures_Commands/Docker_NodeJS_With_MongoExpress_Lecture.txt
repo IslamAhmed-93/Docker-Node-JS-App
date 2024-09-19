@@ -1,0 +1,38 @@
+979	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+980	 docker exec -it node-app_mongo_1 mongo -u root -p example
+981	 docker ps 
+982	 docker exec -it express-node-app-container bash
+983	 docker logs express-node-app-container 
+984	 docker ps 
+985	 docker --version 
+986	 docker exec -it node-app_mongo_1 bash
+987	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+988	 docker volume ls 
+989	 docker volume prune 
+990	 docker ps 
+991	 docker ps -a 
+992	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d
+993	 docker volume ls 
+994	 docker exec -it node-app_mongo_1 mongo -u root -p example
+995	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+996	 docker volume ls 
+997	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d
+998	 docker exec -it node-app_mongo_1 mongo -u root -p example
+999	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down -V
+1000	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down -v
+1001	 docker volume prune 
+1002	 docker ps 
+1003	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+1004	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down -v
+1005	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+1006	 docker volume prune 
+1007	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+1008	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+1009	 docker volume prune 
+1010	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+1011	 docker exec -it node-app_mongo_1 mongo -u root -p example
+1012	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+1013	 docker volume prune 
+1014	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+1015	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+1016	 docker volume prune 
