@@ -1,0 +1,14 @@
+1041	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+1042	 docker ps 
+1043	 docker logs express-node-app-container 
+1044	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+1045	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+1046	 docker logs express-node-app-container 
+1047	 docker ps 
+1048	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+1049	 npm i redis
+1050	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+1051	 docker ps 
+1052	 docker logs express-node-app-container 
+1053	 docker logs express-node-app-container -f
+1054	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
