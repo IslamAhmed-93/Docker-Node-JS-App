@@ -1,0 +1,15 @@
+1058	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+1059	 docker ps 
+1060	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+1061	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+1062	 docker ps 
+1063	 docker logs express-node-app-container -f
+1064	 docker ps
+1065	 docker logs node-app_nginx_1 -f
+1066	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+1067	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d
+1068	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+1069	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+1070	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+1071	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d
+1072	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
