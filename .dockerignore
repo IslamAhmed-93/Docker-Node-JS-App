@@ -5,6 +5,7 @@ Dockerfile
 /Docker_Lectures_Commands
 /Docker_NodeJS_MongoDB
 /Docker_NodeJS_Redis
+/Docker_NodeJS_Nginx
 docker-compose.yml
 docker-compose.prod.yml
 docker-compose.dev.yml
