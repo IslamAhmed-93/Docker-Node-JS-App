@@ -27,7 +27,7 @@ mongoose.connect(URI).then(() => console.log('connect to db.....')).catch((error
 
 app.get('/', (req, res) => {
     redisClient.set('products','products....');
-    res.send('<h1> Hello Trestmerge From Ubuntu Desktop from inside !docker container</h1>')
+    res.send('<h1> Hello Trestmerge From Ubuntu Desktop from inside @!docker container</h1>')
 });
 
 app.get('/data', async (req, res) => {
