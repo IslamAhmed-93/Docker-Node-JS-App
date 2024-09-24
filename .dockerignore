@@ -7,6 +7,7 @@ Dockerfile
 /Docker_NodeJS_Redis
 /Docker_NodeJS_Nginx
 /Docker_NodeJS_Postgres
+/example-app
 docker-compose.yml
 docker-compose.prod.yml
 docker-compose.dev.yml
