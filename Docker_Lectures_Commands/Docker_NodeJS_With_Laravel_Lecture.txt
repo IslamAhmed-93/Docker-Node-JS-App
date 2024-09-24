@@ -1,0 +1,8 @@
+1123	 curl -s "https://laravel.build/example-app?with=mysql,redis" | bash
+1124	 cd example-app/
+1125	 ./vendor/bin/sail up
+1126	 ls -ltrh 
+1127	 ls -ltrha
+1128	 rm -f .gitignore .gitattributes 
+1129	 ls -ltrha
+1130	 cd ..
