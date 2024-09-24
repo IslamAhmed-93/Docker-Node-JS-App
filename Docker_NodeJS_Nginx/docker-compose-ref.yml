@@ -8,6 +8,7 @@ services:
       - ./.env
     depends_on:
       - mongo
+      - redis
   mongo:
     image: mongo:4.4.6
     restart: always
@@ -35,7 +36,7 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - ./Docker_NodeJS_Nginx/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
     depends_on:
       - node-app
 

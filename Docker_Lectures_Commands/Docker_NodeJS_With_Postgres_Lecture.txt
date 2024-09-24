@@ -1,0 +1,9 @@
+1076	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+1077	 docker ps 
+1078	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+1079	 npm install pg
+1080	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+1081	 docker logs express-node-app-container -f
+1082	 docker ps 
+1083	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+1084	 history 
