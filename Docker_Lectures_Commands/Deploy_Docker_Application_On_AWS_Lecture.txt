@@ -1,0 +1,116 @@
+20	 mail -a Installing_Docker_On_AWS_Lecture.txt -t eslam.ahmed.hussien94@gmail.com -s "Docker on AWS Lecture 1 file"
+21	 sudo apt install mailutils -y
+22	 mail -a Installing_Docker_On_AWS_Lecture.txt -t eslam.ahmed.hussien94@gmail.com -s "Docker on AWS Lecture 1 file"
+23	 mail
+24	 mail -a
+25	 mutt -a Installing_Docker_On_AWS_Lecture.txt -s "Docker on AWS Lecture 1 file" -- eslam.ahmed.hussien94@gmail.com
+26	 sudo apt install mutt -y
+27	 mutt -a Installing_Docker_On_AWS_Lecture.txt -s "Docker on AWS Lecture 1 file" -- eslam.ahmed.hussien94@gmail.com
+28	 mail -a Installing_Docker_On_AWS_Lecture.txt -t eslam.ahmed.hussien94@gmail.com -s "Docker on AWS Lecture 1 file"
+29	 mail -s "Docker on AWS Lecture 1 file" eslam.ahmed.hussien94@gmail.com < Installing_Docker_On_AWS_Lecture.txt
+30	 scp Installing_Docker_On_AWS_Lecture.txt islam@192.168.56.106:/home/islam/node-app
+31	 whoami 
+32	 pwd
+33	 scp ubuntu@3.83.212.134:/home/ubuntu/Installing_Docker_On_AWS_Lecture.txt islam@192.168.56.106:/home/islam/node-app
+34	 ping 192.168.56.106
+35	 scp Installing_Docker_On_AWS_Lecture.txt islam@192.168.1.7:/home/islam/node-app
+36	 ls -ltrh /home/ubuntu/.ssh/authorized_keys 
+37	 ls -ltrh /home/ubuntu/.ssh/
+38	 vim /home/ubuntu/.ssh/authorized_keys 
+39	 ls -ltrh 
+40	 chmod 777 Installing_Docker_On_AWS_Lecture.txt 
+41	 mkdir node-app/
+42	 cd node-app/
+43	 git clone https://github.com/IslamAhmed-93/Docker-Node-JS-App.git
+44	 ls -ltrh 
+45	 cd Docker-Node-JS-App/
+46	 ls -ltrh 
+47	 rm -rf node_modules/ Docker_*
+48	 rm -f EC2Tresmerge.pem 
+49	 rm -rf example-app/
+50	 rm -f .env Dockerfile_with_ARG_Condition.txt 
+51	 ls -ltrha
+52	 pwd
+53	 rm -f README.md 
+54	 ls -ltrha
+55	 cd node-app/Docker-Node-JS-App/
+56	 ls -ltrha
+57	 mkdir nginx/
+58	 mv default.conf nginx/
+59	 ls -ltrha
+60	 cd ..
+61	 cp -r node-app/Docker-Node-JS-App/ .
+62	 ls -ltrh 
+63	 cd Docker-Node-JS-App/
+64	 ls -ltrh
+65	 ls -ltrha
+66	 cd ..
+67	 rm -rf node-app/
+68	 cd Docker-Node-JS-App/
+69	 vim src/index.js 
+70	 vim docker-compose-ref.yml 
+71	 cd ..
+72	 ls -ltrh 
+73	 rm -rf Docker-Node-JS-App/
+74	 ls -ltrh 
+75	 pos 
+76	 ls -ltrh 
+77	 chmod 664 Installing_Docker_On_AWS_Lecture.txt 
+78	 ls -ltrh 
+79	 git clone https://github.com/IslamAhmed-93/Docker-Node-JS-App.git
+80	 ls -ltrh
+81	 cd Docker-Node-JS-App/
+82	 ls -ltrh 
+83	 cp -rp Docker_NodeJS_Nginx/nginx/ .
+84	 ls -ltrh 
+85	 ls -ltrh nginx/
+86	 rm -rf Docker_*
+87	 rm -rf example-app/
+88	 rm -rf node_modules/
+89	 rm -f .env EC2Tresmerge.pem README.md 
+90	 ls -ltrhA
+91	 vim src/index.js 
+92	 vim docker-compose-ref.yml 
+93	 cd Docker-Node-JS-App/
+94	 
+95	 ls -ltrh 
+96	 vim docker-compose.prod.yml 
+97	 vim .env
+98	 ls -ltrh 
+99	 ls -ltrha
+100	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up --build
+101	 docker logs docker-node-js-app_nginx_1 -f
+102	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down
+103	 vim docker-compose-ref.yml 
+104	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up --build
+105	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down
+106	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d --build
+107	 docker ps 
+108	 docker logs express-node-app-container -f
+109	 docker logs docker-node-js-app_nginx_1 -f
+110	 vim docker-compose-ref.yml 
+111	 vim docker-compose.prod.yml 
+112	 vim docker-compose.dev.yml 
+113	 docker exec express-node-app-container bash
+114	 docker exec -it express-node-app-container bash
+115	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down
+116	 vim src/index.js 
+117	 ls -ltrha 
+118	 vim .dockerignore
+119	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d --build
+120	 docker ps 
+121	 docker logs express-node-app-container -f
+122	 docker logs docker-node-js-app_nginx_1 -f
+123	 docker logs docker-node-js-app_mongo_1 -f
+124	 docker ps 
+125	 vim src/index.js 
+126	 vim .env 
+127	 vim src/index.js 
+128	 vim docker-compose-ref.yml 
+129	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down
+130	 docker ps 
+131	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d --build
+132	 docker logs docker-node-js-app_nginx_1 -f
+133	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down
+134	 cd ..
+135	 ls -ltrh 
