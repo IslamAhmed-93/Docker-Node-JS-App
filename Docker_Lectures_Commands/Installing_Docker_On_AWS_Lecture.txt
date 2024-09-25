@@ -1,0 +1,17 @@
+1	 docker --version
+2	 sudo apt update -y
+3	 sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
+4	 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+5	 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+6	 sudo apt update -y
+7	 sudo apt install docker-ce
+8	 sudo systemctl status docker
+9	 docker --version
+10	 sudo usermod -aG docker ${USER}
+11	 groups 
+12	 docker --version
+13	 groups 
+14	 docker-compose --version 
+15	 sudo curl -L "https://github.com/docker/compose/releases/download/1.28.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+16	 sudo chmod +x /usr/local/bin/docker-compose
+17	 docker-compose --version
