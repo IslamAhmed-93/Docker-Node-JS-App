@@ -1,0 +1,53 @@
+137	 ls -ltrh 
+138	 ls -ltrh
+139	 pwd
+140	 cd Docker-Node-JS-App/
+141	 ls -ltrh 
+142	 vim docker-compose-ref.yml 
+143	 docker ps 
+144	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d
+145	 docker image ls 
+146	 docker ps 
+147	 cd Docker-Node-JS-App/
+148	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d
+149	 cd Docker-Node-JS-App/
+150	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down
+151	 vim docker-compose-ref.yml 
+152	 docker image ls 
+153	 docker ps 
+154	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml pull
+155	 docker ps 
+156	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d
+157	 cd Docker-Node-JS-App/
+158	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml pull node-app
+159	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml pull
+160	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d
+161	 vim src/index.js 
+162	 cd Docker-Node-JS-App/o
+163	 cd Docker-Node-JS-App/
+164	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml pull
+165	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d
+166	 docker ps 
+167	 ls -ltrh
+168	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down
+169	 vim docker-compose-ref.yml 
+170	 vim src/index.js 
+171	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d
+172	 docker ps 
+173	 cd Docker-Node-JS-App/
+174	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml pull
+175	 docker image ls 
+176	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d
+177	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down
+178	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d
+179	 cdc Docker-Node-JS-App/
+180	 cd Docker-Node-JS-App/
+181	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml pull
+182	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d --build
+183	 docker ps 
+184	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down
+185	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d
+186	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml pull
+187	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d
+188	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down
+189	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d
