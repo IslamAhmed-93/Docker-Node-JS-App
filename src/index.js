@@ -14,6 +14,6 @@ const DB_HOST = 'mongo';
 const URI = `mongodb://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}`;
 mongoose.connect(URI).then(() => console.log('connected to db.....')).catch((error) => console.log('failed to connect to db: ',error));
 
-app.get('/', (req, res) => res.send('<h1> Hello Trestmerge From Ubuntu Desktop from inside @docker container aws</h1>'));
+app.get('/', (req, res) => res.send('<h1> Hello Trestmerge From Ubuntu Desktop from inside @#docker hub aws</h1>'));
 
 app.listen(PORT, () => console.log(`App is up and running on port: ${PORT}`) );
