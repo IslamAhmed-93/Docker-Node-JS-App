@@ -1,3 +1,28 @@
+# Docker Commadns From Source Machine (from which docker image of node-app is pushed to docker hub):
+========================================================================================================
+ 1231   docker login 
+ 1232  pass init 
+ 1233  docker login 
+ 1234  docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml build
+ 1235  docker image ls 
+ 1236  docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml push node-app
+ 1237  docker image ls 
+ 1238  docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml push node-app
+ 1239  docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+ 1240  docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+ 1241  docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml push node-app
+ 1242  docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+ 1243  docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+ 1244  docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml push node-app
+ 1245  docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+ 1246  docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+ 1247  docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml up -d --build
+ 1248  docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml down 
+ 1249  docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml push node-app
+
+
+# Docker Commadns From Target AWS Machine (to which docker image of node-app is pulled from docker hub):
+===========================================================================================================
 137	 ls -ltrh 
 138	 ls -ltrh
 139	 pwd
