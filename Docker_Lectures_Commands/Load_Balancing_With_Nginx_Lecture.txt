@@ -1,0 +1,10 @@
+1251	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d --scale node-app=3 
+1252	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down 
+1253	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d --scale node-app=3 
+1254	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down 
+1255	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d --scale node-app=3 
+1256	 docker ps 
+1257	 cp Docker_NodeJS_Redis/src/index.js src/
+1258	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d --build --scale node-app=3 
+1259	 docker logs node-app_nginx_1 -f
+1260	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down 
