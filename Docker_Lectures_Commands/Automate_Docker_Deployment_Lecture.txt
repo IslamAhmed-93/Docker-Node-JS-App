@@ -1,0 +1,49 @@
+ # Docker Commadns From Source Machine (from which docker image of node-app is pushed to docker hub):
+======================================================================================================
+
+ 1343  docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d --build
+ 1344  docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down 
+ 1345  docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml push node-app
+ 1346  docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d --build
+ 1347  docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down 
+ 1348  docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml push node-app
+ 1349  docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml --build
+ 1350  docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d --build
+ 1351  docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down 
+ 1352  docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml push node-ap
+
+# Docker Commadns From Target AWS Machine (to which docker image of node-app is pulled from docker hub):
+===========================================================================================================
+
+195	 ls -ltrh
+196	 cd Docker-Node-JS-App/
+197	 docker ps 
+198	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down
+199	 cd Docker-Node-JS-App/
+200	 ls -ltrh 
+201	 vim docker-compose.prod.yml 
+202	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d --build
+203	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down
+204	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml pull
+205	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d --build 
+206	 vim docker-compose.prod.yml 
+207	 docker logs docker-node-js-app_ap -f
+208	 docker logs express-node-app-container -f
+209	 vim docker-compose-ref.yml 
+210	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down
+211	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d --build 
+212	 docker logs docker-node-js-app_node-app_1 -f
+213	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down
+214	 cd Docker-Node-JS-App/
+215	 docker ps
+216	 vim docker-compose-ref.yml 
+217	 docker run -d --name watchtower -e WATCHTOWER_TRACE=true -e WATCHTOWER_POLL_INTERVAL=30 -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower express-node-app-container
+218	 docker image ls 
+219	 docker ps 
+220	 vim docker-compose-ref.yml 
+221	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d --build 
+222	 docker ps 
+223	 docker logs watchtower -f
+224	 docker ps 
+225	 docker logs watchtower -f
+226	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down

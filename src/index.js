@@ -28,14 +28,14 @@ mongoose.connect(URI).then(() => console.log('connect to db.....')).catch((error
 
 app.get('/', (req, res) => {
     redisClient.set('products','products....');
-    console.log(`traffuc from ${os.hostname}`);
-    res.send('<h1> Hello Trestmerge From Ubuntu Desktop from inside $docker container</h1>')
+    console.log(`traffic from ${os.hostname}`);
+    res.send('<h1> Hello Trestmerge with watchtower inside $docker container</h1>')
 });
 
 app.get('/data', async (req, res) => {
     const products =  await redisClient.get('products');
-    console.log(`traffuc from ${os.hostname}`);
-    res.send(`<h1> Hello Trestmerge From Ubuntu Desktop from inside @#docker container</h1> <h2>${products}</h2>`)
+    console.log(`traffic from ${os.hostname}`);
+    res.send(`<h1> Hello Trestmerge with watchtower from inside @#docker container</h1> <h2>${products}</h2>`)
 });
 
 app.listen(PORT, () => console.log(`App is up and running on port: ${PORT}`) );
