@@ -4,6 +4,16 @@ services:
     image: islamahmed94/tresmerge-docker
     env_file:
       - ./.env
+    deploy:
+      replicas: 4
+      #placement:
+        #max_replicaas_per_node: 1
+      update_config:
+        parallelism: 2
+        delay: 10s
+      restart_policy:
+        condition: on-failure
+        delay: 5s
     depends_on:
       - mongo
       - redis

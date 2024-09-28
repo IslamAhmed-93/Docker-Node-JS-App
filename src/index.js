@@ -24,18 +24,18 @@ const DB_PORT = 27017;
 const DB_HOST = 'mongo';
 
 const URI = `mongodb://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}`;
-mongoose.connect(URI).then(() => console.log('connect to db.....')).catch((error) => console.log('failed to connect to db: ',error));
+mongoose.connect(URI).then(() => console.log('connected to mongo db.....')).catch((error) => console.log('failed to connect to db: ',error));
 
 app.get('/', (req, res) => {
     redisClient.set('products','products....');
     console.log(`traffic from ${os.hostname}`);
-    res.send('<h1> Hello Trestmerge with watchtower inside $docker container</h1>')
+    res.send('<h1> Hi Trestmerge from $docker container</h1>')
 });
 
 app.get('/data', async (req, res) => {
     const products =  await redisClient.get('products');
     console.log(`traffic from ${os.hostname}`);
-    res.send(`<h1> Hello Trestmerge with watchtower from inside @#docker container</h1> <h2>${products}</h2>`)
+    res.send(`<h1> Hi Trestmerge from @#docker container</h1> <h2>${products}</h2>`)
 });
 
 app.listen(PORT, () => console.log(`App is up and running on port: ${PORT}`) );

@@ -1,0 +1,55 @@
+1367	 docker swarm init
+1368	 docker swarm leave
+1369	 docker swarm leave --force 
+1370	 docker swarm init
+1371	 docker swarm init --advertise-addr 10.0.3.9
+1372	 ping docker_worker_node_1 
+1373	 ip addr
+1374	 docker swarm leave
+1375	 docker swarm leave --force 
+1376	 ping docker_worker_node_1 
+1377	 ip addr
+1378	 vim docker-compose-ref.yml 
+1379	 sudo reboot
+1380	 docker stack --help 
+1381	 docker stack deploy -c docker-compose-ref.yml -c docker-compose.prod.yml express-app
+1382	 docker ps 
+1383	 docker stack --help 
+1384	 docker stack ls 
+1385	 docker ps 
+1386	 docker stack rm express-app -f
+1387	 docker stack rm express-app 
+1388	 docker stack deploy -c docker-compose-ref.yml -c docker-compose.prod.yml express-app
+1389	 docker stack rm express-app 
+1390	 docker stack deploy -c docker-compose-ref.yml -c docker-compose.prod.yml express-app --build
+1391	 docker stack deploy --help 
+1392	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml up -d --build 
+1393	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml push node-app
+1394	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml down 
+1395	 docker stack deploy -c docker-compose-ref.yml -c docker-compose.prod.yml express-app
+1396	 docker stack ls 
+1397	 docker stack services express-app 
+1398	 docker stack ps 
+1399	 docker stack ps express-app 
+1400	 docker swarm --help 
+1401	 docker node --help 
+1402	 docker node ls 
+1403	 docker swarm --version
+1404	 docker node ls 
+1405	 docker node --help 
+1406	 docker node ps
+1407	 docker stack rm express-app 
+1408	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml build 
+1409	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml push node-app
+1410	 docker stack deploy -c docker-compose-ref.yml -c docker-compose.dev.yml express-app
+1411	 docker stack services express-app 
+1412	 docker stack rm express-app 
+1413	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml build 
+1414	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml push node-app
+1415	 docker stack deploy -c docker-compose-ref.yml -c docker-compose.dev.yml express-app
+1416	 docker stack ps 
+1417	 docker stack ps express-app 
+1418	 docker-compose -f docker-compose-ref.yml -f docker-compose.dev.yml build 
+1419	 docker-compose -f docker-compose-ref.yml -f docker-compose.prod.yml push node-app
+1420	 docker stack deploy -c docker-compose-ref.yml -c docker-compose.dev.yml express-app
+1421	 docker stack rm express-app 
